@@ -18,21 +18,27 @@ This app allows users to start, pause, and reset a timer to measure elapsed time
 - **Min SDK:** 26+  
 - **IDE:** Android Studio
 
-## Screenshots
+## Screenshot
+
+Here’s how the Stopwatch app UI looks:
+
+![App Screenshot](Media/Screenshot.png)
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/stopwatch-app.git
+   git clone https://github.com/your-username/Stopwatch.git
    ```
 2. Open the project in Android Studio.
 3. Build and run on a device or emulator with API 21+.
 
-## License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 Inspired by O'Reilly's Android development tutorials and official Android documentation.
+
+## Attributions
+
+App icon made by [Edward Boatman](https://thenounproject.com/creator/edward/) from [The Noun Project](https://thenounproject.com)  
+Licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+

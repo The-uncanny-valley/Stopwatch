@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var notificationHelper: NotificationHelper
     lateinit var stopwatch: Chronometer
     var running = false
     var offset: Long = 0 // базовое смещение
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        notificationHelper = NotificationHelper(this)
+        notificationHelper.createChannel()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -48,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 setBaseTime()
                 stopwatch.start()
                 running = true
+                notificationHelper.showRunningNotification()
             }
         }
 
@@ -57,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 saveOffset()
                 stopwatch.stop()
                 running = false
+                notificationHelper.cancelNotification()
             }
         }
 
@@ -64,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         resetButton.setOnClickListener {
             offset = 0
             setBaseTime() // обнулить показания секундомера
+            notificationHelper.cancelNotification()
         }
     }
 

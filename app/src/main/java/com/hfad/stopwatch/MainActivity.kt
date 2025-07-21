@@ -68,6 +68,8 @@ class MainActivity : AppCompatActivity() {
         val resetButton = findViewById<Button>(R.id.reset_button)
         resetButton.setOnClickListener {
             offset = 0
+            stopwatch.stop()
+            running = false
             setBaseTime() // обнулить показания секундомера
             notificationHelper.cancelNotification()
         }

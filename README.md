@@ -6,9 +6,9 @@ This app allows users to start, pause, and reset a timer to measure elapsed time
 ## Features
 
 - Start, Pause, and Reset buttons  
-- Accurate time tracking in MM:SS format  
-- MVVM architecture  
-- XML-based UI design
+- Time tracking in MM:SS format  
+- Light and Dark theme support following system settings  
+- Intuitive and minimalistic design
 
 ## Tech Stack
 
@@ -18,11 +18,18 @@ This app allows users to start, pause, and reset a timer to measure elapsed time
 - **Min SDK:** 26+  
 - **IDE:** Android Studio
 
-## Screenshot
+## Screenshots
 
-Here’s how the Stopwatch app UI looks:
-
-![App Screenshot](Media/Screenshot.png)
+<table>
+  <tr>
+    <td><img src="Media/Screenshot.png" alt="Light Theme" width="300"/></td>
+    <td><img src="Media/Screenshot_2.png" alt="Dark Theme" width="300"/></td>
+  </tr>
+  <tr>
+    <td align="center">Light Theme</td>
+    <td align="center">Dark Theme</td>
+  </tr>
+</table>
 
 ## Installation
 

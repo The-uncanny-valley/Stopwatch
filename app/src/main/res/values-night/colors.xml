@@ -3,5 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="text_primary">#FFFFFFFF</color>
     <color name="background_primary">#202020</color>
-    <color name="button_background_primary">#202020</color>
+    <color name="button_background_primary">#FF9E5A</color>
 </resources>
